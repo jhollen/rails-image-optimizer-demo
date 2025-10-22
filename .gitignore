@@ -33,3 +33,7 @@
 # Ignore key files for decrypting credentials and more.
 /config/*.key
 
+# Ignore image optimization output and cache
+app/assets/images/bloated/
+config/image_optimization_manifest.yml
+node_modules/

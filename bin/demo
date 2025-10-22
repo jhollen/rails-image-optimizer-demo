@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Ensure we're in repo root
+cd "$(dirname "$0")/.."
+
+# Ensure local svgo is on PATH (if present)
+export PATH="./node_modules/.bin:$PATH"
+
+echo "🧪 Seeding bloated demo images (500)…"
+bin/rails "images:seed_bloated[500]"
+
+echo "🛠️  Running optimizer…"
+bin/rake images:optimize
+
+echo "📊 Stats:"
+bin/rake images:stats
+
+echo "✅ Demo complete."
