@@ -1,0 +1,28 @@
+{
+  "name": "rails-image-optimizer-demo",
+  "version": "1.0.0",
+  "description": "```bash bin/setup bin/demo ```",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "svgo": "svgo --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhollen/rails-image-optimizer-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jhollen/rails-image-optimizer-demo/issues"
+  },
+  "homepage": "https://github.com/jhollen/rails-image-optimizer-demo#readme",
+  "devDependencies": {
+    "svgo": "^4.0.0"
+  }
+}

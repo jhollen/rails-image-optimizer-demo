@@ -3,7 +3,7 @@ namespace :images do
   desc "Seed bloated demo images. Usage: rake 'images:seed_bloated[COUNT]' (default 500)"
   task :seed_bloated, [:count] => :environment do |_, args|
     require "fileutils"
-    count = (args[:count] || 500).to_i
+    count = (args[:count] || 50).to_i
     dir   = Rails.root.join("app/assets/images/bloated")
     FileUtils.mkdir_p(dir)
 
